@@ -11,6 +11,9 @@
   --muted-light: #9ca3af;
   --income: #00c896;
   --expense: #f43f5e;
+  --warning: #f59e0b;
+  --warning-bg: #fffbeb;
+  --success-bg: #ecfdf5;
   --shadow-card: 0 1px 3px rgba(11, 15, 20, 0.06);
   --radius-card: 18px;
 }
@@ -26,6 +29,9 @@
   --color-muted-light: var(--muted-light);
   --color-income: var(--income);
   --color-expense: var(--expense);
+  --color-warning: var(--warning);
+  --color-warning-bg: var(--warning-bg);
+  --color-success-bg: var(--success-bg);
   --font-sans: var(--font-plus-jakarta);
   --radius-card: var(--radius-card);
   --shadow-card: var(--shadow-card);
@@ -51,4 +57,17 @@ body {
   border: 1px solid var(--border);
   border-radius: 14px;
   box-shadow: var(--shadow-card);
+}
+
+@keyframes flux-progress {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+@utility flux-progress-bar {
+  animation: flux-progress 1.4s ease-in-out infinite;
 }
