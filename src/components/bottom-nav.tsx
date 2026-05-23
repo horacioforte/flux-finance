@@ -27,9 +27,9 @@ const navItems: NavItem[] = [
     ),
   },
   {
-    href: "/pending",
+    href: "/pendencias",
     label: "Pendências",
-    match: "/pending",
+    match: "/pendencias",
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden>
         <path

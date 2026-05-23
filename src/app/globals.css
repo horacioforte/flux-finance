@@ -71,3 +71,17 @@ body {
 @utility flux-progress-bar {
   animation: flux-progress 1.4s ease-in-out infinite;
 }
+
+@keyframes flux-pendencias-bar-glow {
+  0%,
+  100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.08);
+  }
+}
+
+@utility flux-pendencias-fill {
+  animation: flux-pendencias-bar-glow 2.2s ease-in-out infinite;
+}
