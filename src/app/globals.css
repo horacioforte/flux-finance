@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f4f6f8;
+  --foreground: #0b0f14;
+  --primary: #00c896;
+  --primary-hover: #00b386;
+  --card: #ffffff;
+  --border: #e7eaee;
+  --muted: #6b7280;
+  --muted-light: #9ca3af;
+  --income: #00c896;
+  --expense: #f43f5e;
+  --shadow-card: 0 1px 3px rgba(11, 15, 20, 0.06);
+  --radius-card: 18px;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-card: var(--card);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-muted-light: var(--muted-light);
+  --color-income: var(--income);
+  --color-expense: var(--expense);
+  --font-sans: var(--font-plus-jakarta);
+  --radius-card: var(--radius-card);
+  --shadow-card: var(--shadow-card);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-plus-jakarta), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@utility flux-card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+
+@utility flux-icon-btn {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow-card);
+}
