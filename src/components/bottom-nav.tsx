@@ -49,9 +49,9 @@ const navItems: NavItem[] = [
     ),
   },
   {
-    href: "/export",
+    href: "/exportar",
     label: "Exportar",
-    match: "/export",
+    match: "/exportar",
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden>
         <path
